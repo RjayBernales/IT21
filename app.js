@@ -1,7 +1,4 @@
-
 //Inputs
-console.log("I'm RJ, a student at NBSC");
-
 const person1={
     Name: "RJ",
     age: 18,
@@ -10,6 +7,6 @@ const person1={
 
 //Process and Output
 console.log("Hello!!")
-console.log("Name: " + person1.name)
-console.log("Hello!!" + person1.age)
-console.log("Hello!!" + person.hobby)
+console.log("Name: " + person1.Name)
+console.log("Age: " + person1.age)
+console.log("Hobby: " + person1.hobby)
