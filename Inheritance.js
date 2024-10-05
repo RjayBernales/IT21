@@ -38,3 +38,29 @@ class Person{
         `;
     }
 }
+class add extends Person{
+    constructor(hair, eyes, smile, aura){
+        super(hair, eyes, smile);
+        this.aura = aura;
+    }
+
+    //Overriding the displayInfo method
+    displayInfo(){
+        super.displayInfo();
+        console.log("Aura: " + this.aura);
+    }
+
+    //Extending the displayInfoHTML method
+    displayInfoHTML(){
+        super.displayInfoHTML();
+        const personElement = document.getElementById('person'); 
+        personElement.innerHTML += `
+        <br><strong>Aura:</strong> ${this.aura}`
+    }
+    
+}
+ //Added instance for the object
+ const person = new add('Midnight Waves', 'Golden Hazel', 'Radiant', 'Bright And Magnetic');
+
+//This statement is what displays the output
+person.displayInfo();
