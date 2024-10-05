@@ -7,20 +7,38 @@
 </head>
 <body>
     <h1>Hello Welcome to my World</h1>
-    <h1 id="person-name"></h1>
-    <h1 id="person-age"></h1>
-    <h1 id="person-hobby"></h1>
+    <h1 id="person1"></h1>
 
     <script>
-        const person1 ={
-            Name: "RJ",
-            age: 18,
-            hobby: "Reading"
+        //Inputing and adding class Person
+        class Person{
+        constructor (Name, age, hobby) {
+            this.Name= Name;
+            this.age = age;
+            this.hobby= hobby;
         }
-            console.log("Name: " + person1.name);
-            console.log("Hello!!" + person1.age);
-            console.log("Hello!!" + person.hobby);
-        
+        //Sol 1
+        DisplayInfo(){
+            console.log("Name: " + person1.Name);
+            console.log("Age" + person1.age);
+            console.log("Hobby" + person1.hobby);
+        }
+        //Sol 2
+        DisplayViaHTML(){
+            const personElement = document.getElementById('person1');
+            personElement.innerHTML =`
+            <strong>Name:</strong> ${this.Name}<br> 
+            <strong>Age:</strong> ${this.age}<br> 
+            <strong>Name:</strong> ${this.hobby}<br> 
+            `;
+        }
+    }
+    //creating instance for person
+    const person1 = new Person(RJ, 19, Reading)
+    //Calling Method
+    person1.DisplayInfo();
+    person1.DisplayViaHTML();
+
     </script>
 </body>
 </html>
