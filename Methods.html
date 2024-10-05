@@ -13,7 +13,23 @@
                 this.age = age;
                 this.hobby = hobby;
             }
+        
+        //Solution 1 displaying using console.log
+        displayInfo(){
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Hobby: " + this.hobby);
+         }
+        //Solution 2 Displaying via html
+        displayViaHTML(){
+            const personElement = document.getElementById('person');
+            personElement.innerHTML = `
+            <strong>Name:</strong>${this.name};
+            <strong>Age:</strong>${this.age};
+            <strong>Hobby:</strong>${this.hobby};
+            `;
         }
+    }    
     </script>
 </body>
 </html>
