@@ -11,3 +11,10 @@ console.log("Hello Pipols!")
 console.log("Name: " + person.name);
 console.log("Age: " + person.age);
 console.log("Hobby: " + person.hobby);
+
+
+//process and output
+console.log("Hello Pipols!")
+console.log("Name: " + person.name);
+console.log("Age: " + person.age);
+console.log("Hobby: " + person.hobby);
