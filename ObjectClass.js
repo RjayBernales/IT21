@@ -1,5 +1,4 @@
 //input
-
 const person={
     name: "RJ",
     age: 19,
