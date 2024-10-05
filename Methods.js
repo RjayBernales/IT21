@@ -34,4 +34,10 @@ const art = {
         <strong>Hobby:</strong> ${this.entry}
         `   ;
     }
+    
 }
+    //Added instance for the class object
+    const person = new arts("Rain", "Landscape", 1);
+
+    //calling method to display output
+    person.displayInfo
