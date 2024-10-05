@@ -15,8 +15,8 @@ const art = {
    class arts {
     constructor(name, type, entry){
         this.name = name;
-        this.age = type;
-        this.hobby = entry;
+        this.type = type;
+        this.entry = entry;
     }
 
     //Solution 1 displaying using console.log
