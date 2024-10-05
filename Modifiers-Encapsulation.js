@@ -39,4 +39,3 @@ class Person {
 
     //codes/statements calling the method
     person.displayInfo();
-    person.displayViaHTML();
