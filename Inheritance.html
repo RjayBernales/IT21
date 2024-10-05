@@ -50,7 +50,20 @@
                 `;
             }
         }
-        
+        class add extends Person{
+            constructor(hair, eyes, smile, aura){
+                super(hair, eyes, smile);
+                this.aura = aura;
+            }
+
+            //Overriding the displayInfo method
+            displayInfo(){
+                super.displayInfo();
+                console.log("Aura: " + this.aura);
+            }
+
+            
+        }
     </script>
 </body>
 </html>
