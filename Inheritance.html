@@ -41,7 +41,7 @@
                 console.log("Smile: " + this.smile);
             }
             //Solution 2 Displaying via html
-            displayViaHTML() {
+            displayInfoHTML() {
                 const personElement = document.getElementById('person'); 
                 personElement.innerHTML = `
                 <strong>Hair:</strong> ${this.hair}<br>
@@ -62,6 +62,13 @@
                 console.log("Aura: " + this.aura);
             }
 
+            //Extending the displayInfoHTML method
+            displayInfoHTML(){
+                super.displayInfoHTML();
+                const personElement = document.getElementById('person'); 
+                personElement.innerHTML = `
+                <strong>Aura:</strong> ${this.aura}`
+            }
             
         }
     </script>
