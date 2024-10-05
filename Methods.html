@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World of OOP!</h1>
+    <h1 id="person"></h1>
+    <script>
+        class Person {
+            constructor(name, age, hobby){
+                this.name = name;
+                this.age = age;
+                this.hobby = hobby;
+            }
+        
+        //Solution 1 displaying using console.log
+        displayInfo(){
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Hobby: " + this.hobby);
+         }
+        //Solution 2 Displaying via html
+        displayViaHTML() {
+        const personElement = document.getElementById('person'); 
+        personElement.innerHTML = `
+        <strong>Name:</strong> ${this.name}<br>
+        <strong>Age:</strong> ${this.age}<br>
+        <strong>Hobby:</strong> ${this.hobby}
+        `;
+        }
+    }    
+
+    //Added instance for the class object
+    const person = new Person("RJ", 19, "Programming");
+
+    //codes/statements calling the method
+    person.displayInfo();
+    person.displayViaHTML();
+    </script>
+</body>
+</html>
