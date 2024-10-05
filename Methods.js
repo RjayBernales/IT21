@@ -12,7 +12,7 @@ const art = {
    console.log("~~~~~~~~~~~~~~~~~~~~~~~~");
 
    //Adding class
-   class Person {
+   class arts {
     constructor(name, type, entry){
         this.name = name;
         this.age = type;
