@@ -6,6 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Hello World of OOP!!</h1>
+    <h1 id="person-name"></h1>
+    <h1 id="person-age"></h1>
+    <h1 id="person-hobby"></h1>
+
+    <script>
+        class Person {
+            constructor(name, age, hobby){
+                this.name = name;
+                this.age = age;
+                this.hobby = hobby;
+            }
+        }
+        //instance for Person
+        const person = new Person("RJ", 19, "Reading");
+
+        //process and Output in 2 ways or solutions
+
+        //Solution 1
+        console.log("Name: " + person.name);
+        console.log("Age: " + person.age);
+        console.log("Hobby: " + person.hobby);
+
+        //Solution 2
+        document.getElementById("person-name").innerHTML = "Name: " + person.name;
+        document.getElementById("person-age").innerHTML = "Age: " + person.age;
+        document.getElementById("person-hobby").innerHTML = "Hobby: " + person.hobby;
+
+    </script>
 </body>
 </html>
