@@ -28,6 +28,15 @@ class ChartCreator {
         throw new Error('createCharts() must be implemented in subclasses');
     }
 }
+class LineChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.lineCtx = document.getElementById('lineChart');
+    }
+    createCharts() {
+        this.createLineChart(); 
+    }
+}
 class BarChart extends ChartCreator {
     constructor(dataUrl) {
         super(dataUrl);
