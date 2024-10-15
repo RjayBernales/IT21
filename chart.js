@@ -162,4 +162,8 @@ class BarChart extends ChartCreator {
 }
 // Initialize the bar chart
 const barChartCreator = new BarChart('data.json');
-barChartCreator.init();     
+barChartCreator.init();   
+
+// Initialize the line chart
+const lineChartCreator = new LineChart('data.json');
+lineChartCreator.init();
