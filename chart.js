@@ -42,7 +42,7 @@ class BarChart extends ChartCreator {
         const chartData = {
             labels: this.chartData.labels,
             datasets: [{
-                label: 'Number of Students',
+                label: 'Number of Internet Users',
                 data: this.chartData.data,
                 backgroundColor: 'rgba(54, 162, 235, 0.5)',  
                 borderColor: 'rgba(54, 162, 235, 1)',  
@@ -88,7 +88,9 @@ class BarChart extends ChartCreator {
                 }
             }
         };
-
         new Chart(this.barCtx, config); 
     }
 }
+// Initialize the bar chart
+const barChartCreator = new BarChart('data.json');
+barChartCreator.init();     
